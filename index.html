@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ncloudxel Technologies | Cloud & DevOps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container nav">
+    <div class="logo">ncloudxel <span>Technologies</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- HERO -->
+<section class="hero hero-image">
+  <div class="hero-content">
+    <h1>Cloud & DevOps Solutions</h1>
+    <p>Secure • Scalable • Cost-Optimized Cloud Engineering</p>
+    <a href="contact.html" class="btn-primary">Contact Us</a>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section light">
+  <div class="container">
+    <h2 class="section-title">Our Expertise</h2>
+
+    <!-- YEARS COUNTER -->
+    <div class="counter-box" style="text-align:center; margin-bottom:40px;">
+      <span id="years-counter">1</span>
+      <p>Years of Cloud & DevOps Expertise</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Cloud Consulting</h3>
+        <p>Architecture, migration & modernization</p>
+      </div>
+
+      <div class="card">
+        <h3>DevSecOps</h3>
+        <p>CI/CD, security & automation</p>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes & EKS</h3>
+        <p>Scalable container platforms</p>
+      </div>
+
+      <div class="card">
+        <h3>FinOps & Cost Optimization</h3>
+        <p>Reduce cloud spend up to 30%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Experience</h3>
+        <p>Years of Industry Expertise</p>
+      </div>
+
+      <div class="card">
+        <h3>Cost Optimization</h3>
+        <p>Maximize Cloud Savings</p>
+      </div>
+
+      <div class="card">
+        <h3>Security Focused</h3>
+        <p>Secure & Compliant Solutions</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  let count = 1;
+  const maxYears = 10;
+  const counter = document.getElementById("years-counter");
+
+  if (counter) {
+    const interval = setInterval(() => {
+      if (count < maxYears) {
+        count++;
+        counter.textContent = count;
+      } else {
+        clearInterval(interval);
+      }
+    }, 200);
+  }
+</script>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 ncloudxel Technologies | <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
