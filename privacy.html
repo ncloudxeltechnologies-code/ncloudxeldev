@@ -9,55 +9,132 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <div class="logo">ncloudxel <span>Technologies</span></div>
-    <div class="logo">
+
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-left">
+       📧 info@ncloudxel.in
+      <span>|</span>
+      📍 India • Global Delivery
     </div>
-    <nav>
+    <div class="top-right">
+      Cloud • DevOps • Security • FinOps
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER -->
+<header class="premium-header">
+  <div class="container header-inner">
+
+    <div class="logo">
+      ncloudxel <span>Technologies</span>
+    </div>
+
+    <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="industry.html" class="active">Industries</a>
       <a href="case-studies.html">Case Studies</a>
+           <a href="careers.html">Careers</a>
       <a href="contact.html">Contact</a>
-     </nav>
+    </nav>
+
+    <a href="contact.html" class="header-cta">
+      Talk to an Expert
+    </a>
+
   </div>
 </header>
 
-  <main>
-    <h2>Privacy Policy</h2>
-    <p>We respect your privacy. Any information collected via forms, emails, or other means is used solely to respond to your queries and improve our services. We do not share personal data with third parties without consent.</p>
+  <main class="policy-container">
 
-    <h3>Information We Collect</h3>
+  <h1>Privacy Policy</h1>
+  <p class="policy-updated">Last updated: January 2025</p>
+
+  <p>
+    At <strong>ncloudxel Technologies</strong>, we are committed to protecting your privacy
+    and safeguarding the information you share with us. This Privacy Policy explains
+    how we collect, use, disclose, and protect your information when you interact with
+    our website, services, and communications.
+  </p>
+
+  <section>
+    <h2>1. Information We Collect</h2>
+    <p>We may collect the following categories of information:</p>
     <ul>
-      <li>Personal details like name, email, phone number.</li>
-      <li>Technical information like IP address, browser type, and access times.</li>
-      <li>Usage data for improving our website and services.</li>
+      <li><strong>Personal Information:</strong> Name, email address, phone number, company name.</li>
+      <li><strong>Technical Information:</strong> IP address, browser type, device information.</li>
+      <li><strong>Usage Data:</strong> Pages visited, time spent on the website, interaction data.</li>
     </ul>
+  </section>
 
-    <h3>How We Use Your Information</h3>
+  <section>
+    <h2>2. How We Use Your Information</h2>
     <ul>
-      <li>To respond to your inquiries.</li>
-      <li>To personalize and enhance your experience.</li>
-      <li>To comply with legal obligations.</li>
+      <li>To respond to inquiries and provide requested services</li>
+      <li>To improve our website, offerings, and user experience</li>
+      <li>To communicate important updates or service-related information</li>
+      <li>To comply with legal and regulatory obligations</li>
     </ul>
+  </section>
 
-    <h3>Cookies</h3>
-    <p>We may use cookies to enhance user experience. You can choose to disable cookies through your browser settings.</p>
+  <section>
+    <h2>3. Cookies & Tracking Technologies</h2>
+    <p>
+      We use cookies and similar technologies to enhance functionality, analyze traffic,
+      and understand user behavior. You may disable cookies through your browser settings;
+      however, some features of the website may not function optimally.
+    </p>
+  </section>
 
-    <h3>Third-Party Services</h3>
-    <p>We may use third-party services like analytics or payment processors, which have their own privacy policies.</p>
+  <section>
+    <h2>4. Third-Party Services</h2>
+    <p>
+      We may use trusted third-party services such as analytics providers or communication
+      tools. These third parties operate under their own privacy policies, and we encourage
+      you to review them.
+    </p>
+  </section>
 
-    <h3>Data Security</h3>
-    <p>We take reasonable measures to protect your data. However, no method of transmission over the Internet is 100% secure.</p>
+  <section>
+    <h2>5. Data Security</h2>
+    <p>
+      We implement industry-standard technical and organizational measures to protect your
+      information against unauthorized access, disclosure, alteration, or destruction.
+      While we strive to protect your data, no method of transmission over the internet is
+      completely secure.
+    </p>
+  </section>
 
-    <h3>Changes to This Policy</h3>
-    <p>We may update this policy periodically. Please check this page regularly for updates.</p>
+  <section>
+    <h2>6. Data Retention</h2>
+    <p>
+      We retain personal information only for as long as necessary to fulfill the purposes
+      outlined in this policy or as required by applicable laws.
+    </p>
+  </section>
 
-    <h3>Contact Us</h3>
-    <p>If you have questions regarding this policy, contact us at <a href="mailto:info@ncloudxel.com">info@ncloudxel.com</a>.</p>
+  <section>
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be posted on
+      this page with a revised effective date.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have questions or concerns about this Privacy Policy or our data practices,
+      please contact us at
+      <a href="mailto:info@ncloudxel.in">info@ncloudxel.in</a>.
+    </p>
+  </section>
+
+</main>
+
 <!-- WhatsApp Floating Button -->
 <div class="whatsapp-wrapper">
     <a href="https://wa.me/919311663343"
@@ -124,6 +201,52 @@ function getBotReply(message) {
     return "Thanks for your message. Our team will get back to you soon.";
 }
 </script>
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  if (
+    e.key === 'F12' ||
+    (e.ctrlKey && ['u','s','c','p'].includes(e.key.toLowerCase()))
+  ) e.preventDefault();
+});
+</script>
 
+
+<footer class="premium-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <h3>ncloudxel Technologies</h3>
+      <p>
+        Cloud, DevOps & security engineering partner helping businesses
+        build scalable, secure, and cost-efficient platforms.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li>Cloud & Datacenter</li>
+        <li>DevOps & Platform Engineering</li>
+        <li>DevSecOps & Security</li>
+        <li>Kubernetes & Containers</li>
+        <li>FinOps & Cost Optimization</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 info@ncloudxel.in</p>
+      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📞 +91 93116 63343</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      © 2025 ncloudxel Technologies. All Rights Reserved •
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
   </body>
 </html>
