@@ -16,13 +16,14 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
+      <a href="industry.html" class="active">Industries</a>
       <a href="case-studies.html">Case Studies</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 <!-- PAGE HERO -->
-<section class="hero" style="height:50vh;">
+<section class="hero" style="height:30vh;">
   <div class="hero-content">
     <h1>Our Services</h1>
     <p>Cloud • DevOps • Security • Cost Optimization</p>
@@ -113,6 +114,72 @@
     <a href="contact.html" class="btn-primary">Contact Our Team</a>
   </div>
 </section>
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-wrapper">
+    <a href="https://wa.me/919311663343"
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Chat with us on WhatsApp">
+        <img src="assets/images/whatsapp.png" alt="WhatsApp">
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+</div>
+<!-- Chatbot Button -->
+<div class="chatbot-container">
+    <div class="chatbot-toggle" onclick="toggleChatbot()">
+        💬
+    </div>
+
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">
+            NCloudXel Assistant
+            <span onclick="toggleChatbot()">✖</span>
+        </div>
+
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="bot-msg">👋 Hi! How can we help you today?</div>
+        </div>
+
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+<script>
+function toggleChatbot() {
+    const box = document.getElementById("chatbotBox");
+    box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
+
+function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const chat = document.getElementById("chatMessages");
+
+    chat.innerHTML += `<div class="user-msg">${msg}</div>`;
+    input.value = "";
+
+    setTimeout(() => {
+        chat.innerHTML += `<div class="bot-msg">${getBotReply(msg)}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+    }, 600);
+}
+
+function getBotReply(message) {
+    message = message.toLowerCase();
+
+    if (message.includes("service")) return "We provide Cloud, DevOps, DevSecOps, and Infrastructure solutions.";
+    if (message.includes("contact")) return "You can contact us via WhatsApp or the Contact page.";
+    if (message.includes("cloud")) return "We help with AWS, Azure, and GCP cloud solutions.";
+    if (message.includes("price")) return "Pricing depends on your requirements. Please contact us.";
+    if (message.includes("hello") || message.includes("hi")) return "Hello! 👋 How can I help you?";
+
+    return "Thanks for your message. Our team will get back to you soon.";
+}
+</script>
 
 <!-- FOOTER -->
 <footer class="footer">
