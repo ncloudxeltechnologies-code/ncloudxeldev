@@ -1722,3 +1722,35 @@ html, body {
     padding-left: 16px;
   }
 }
+/* =========================
+   MOBILE MENU COMPACT FIX
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Menu container */
+  .nav-links {
+    padding: 6px 0 !important;
+    gap: 0 !important;
+  }
+
+  /* Menu items */
+  .nav-links a {
+    padding: 8px 16px !important;   /* 🔑 reduced height */
+    margin: 0 !important;
+    font-size: 16px;
+    line-height: 1.4;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+
+  /* Remove last divider */
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  /* Kill inherited margins */
+  .nav-links li {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
