@@ -1222,6 +1222,47 @@ button, a {
 html {
   font-size: 18px; /* comfortable reading on phones */
 }
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  .header-cta {
+    display: none;
+  }
+}
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-links.mobile-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+}
+
 
 
 
