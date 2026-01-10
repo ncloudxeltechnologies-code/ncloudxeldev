@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
+  <script>
+  document.querySelector('.menu-toggle')
+    .addEventListener('click', function () {
+      document.querySelector('.nav-links')
+        .classList.toggle('mobile-open');
+    });
+</script>
+
 <body>
 
 <!-- HEADER -->
@@ -23,6 +31,7 @@
     </div>
   </div>
 </div>
+<div class="menu-toggle">☰</div>
 
 <!-- MAIN HEADER -->
 <header class="premium-header">
@@ -389,6 +398,7 @@ document.addEventListener('keydown', e => {
 
 </body>
 </html>
+
 
 
 
