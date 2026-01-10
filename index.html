@@ -5,17 +5,43 @@
   <title>ncloudxel Technologies | Cloud & DevOps</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-</head>
-  <script>
-  document.querySelector('.menu-toggle')
-    .addEventListener('click', function () {
-      document.querySelector('.nav-links')
-        .classList.toggle('mobile-open');
-    });
-</script>
+  <link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
 
+
+  <meta name="google-site-verification" content="f1TYw5nrwaogJp52W-HO2xkgEYmtb5gSk9vvEeI_8cE" />
+</head>
 <body>
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <div class="cookie-icon">🍪</div>
+
+    <h2>We respect your privacy</h2>
+
+    <p>
+      We use cookies to ensure the best possible browsing experience.
+      Some are needed for essential features like login sessions, while
+      others help us provide you with content and marketing more closely
+      tailored to your needs. Accepting all cookies enables us to enhance
+      your experience further. Please note, some of these may be
+      third-party cookies.
+      <a href="/cookie-policy.html">Cookie Policy</a>.
+    </p>
+
+    <div class="cookie-actions">
+      <button class="btn-outline" onclick="openCookiePreferences()">
+        MODIFY PREFERENCES
+      </button>
+      <button class="btn-primary" onclick="acceptAllCookies()">
+        ACCEPT ALL
+      </button>
+    </div>
+  </div>
+</div>
 
 <!-- HEADER -->
 <!-- TOP CONTACT BAR -->
@@ -25,21 +51,30 @@
       📧 info@ncloudxel.in
       <span>|</span>
       📍 India • Global Delivery
+                        
     </div>
+      <span>|</span>
     <div class="top-right">
       Cloud • DevOps • Security • FinOps
     </div>
   </div>
 </div>
-<div class="menu-toggle">☰</div>
+<div class="mobile-top-info">
+   <a href="mailto:info@ncloudxel.in">📧 info@ncloudxel.in</a><br>
+  📍 India • Global Delivery<br>
+</div>
 
 <!-- MAIN HEADER -->
 <header class="premium-header">
   <div class="container header-inner">
 
-    <div class="logo">
-      ncloudxel <span>Technologies</span>
-    </div>
+<div class="logo">
+  <a href="index.html">
+    <img src="assets/images/ncloudxel-logo.png"
+         alt="ncloudxel TECHNOLOGIES"
+         class="site-logo">
+  </a>
+</div>
 
     <nav class="nav-links">
       <a href="index.html">Home</a>
@@ -96,19 +131,24 @@
       <img src="assets/images/docker.jpg" alt="Docker">
     </div>
   </div>
+  <div class="logo-marquee">
+ 
+</div>
+
 </section>
 
 <!-- HERO -->
 <section class="hero hero-image">
   <div class="hero-content">
-    <h1>Build. Secure. Scale.</h1>
+    <h1>Build Fast. Scale Securely.</h1>
     <p>
-      Cloud & DevOps engineering services that help businesses 
-      deploy faster, stay secure, and control cloud costs.
+      ncloudxel is a premium cloud and DevSecOps partner for startups and growth-stage companies.
+      We design, secure, and scale AWS and Kubernetes platforms with production-grade reliability,
+      security-by-default, and cost-aware architectures.
     </p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn-primary">Talk to an Expert</a>
-      <a href="services.html" class="btn-secondary">View Services</a>
+      <a href="contact.html" class="btn-primary">Talk to a Cloud Expert</a>
+      <a href="services.html" class="btn-secondary">Explore Services</a>
     </div>
   </div>
 </section>
@@ -120,6 +160,11 @@
     <div class="cards services-grid">
 
       <div class="card">
+                 <img 
+          src="assets/images/cloud-datacenter.png" 
+          alt="Cloud and Datacenter Consulting - AWS Azure GCP VMware OpenStack"
+          class="service-icon"
+         />
         <h3>Cloud & Datacenter Consulting</h3>
         <p>
           Design, migrate, and modernize infrastructure across AWS, Azure, GCP,
@@ -128,6 +173,11 @@
       </div>
 
       <div class="card">
+                         <img 
+          src="assets/images/devpla.png" 
+          alt="DevOps & Platform Engineering"
+          class="service-icon"
+         />
         <h3>DevOps & Platform Engineering</h3>
         <p>
           CI/CD pipelines, infrastructure as code, automation, and SRE practices
@@ -136,6 +186,11 @@
       </div>
 
       <div class="card">
+                                  <img 
+            src="assets/images/devsec.png" 
+            alt="DevSecOps & Cloud Security"
+            class="service-icon"
+          />
         <h3>DevSecOps & Cloud Security</h3>
         <p>
           Shift-left security with secure pipelines, secrets management,
@@ -144,6 +199,11 @@
       </div>
 
       <div class="card">
+                                          <img 
+            src="assets/images/kubecon.png" 
+            alt="DevSecOps & Cloud Security"
+            class="service-icon"
+          />
         <h3>Kubernetes & Containers</h3>
         <p>
           Enterprise-grade Kubernetes platforms, GitOps workflows, Helm charts,
@@ -152,6 +212,11 @@
       </div>
 
       <div class="card">
+                                                  <img 
+            src="assets/images/finops.png" 
+            alt="DevSecOps & Cloud Security"
+            class="service-icon"
+          />
         <h3>FinOps & Cost Optimization</h3>
         <p>
           Gain visibility, governance, and cost control across multi-cloud
@@ -160,6 +225,11 @@
       </div>
 
       <div class="card">
+                                                         <img 
+            src="assets/images/obser.png" 
+            alt="DevSecOps & Cloud Security"
+            class="service-icon"
+          />
         <h3>Observability & Reliability</h3>
         <p>
           End-to-end monitoring, logging, and alerting using Prometheus, Grafana,
@@ -174,7 +244,7 @@
 <!-- WHY CHOOSE US -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">Why NCloudXel</h2>
+    <h2 class="section-title">Why ncloudxel TECHNOLOGIES</h2>
 
     <div class="cards">
 
@@ -240,7 +310,7 @@
 
     <div class="chatbot-box" id="chatbotBox">
         <div class="chatbot-header">
-            NCloudXel Assistant
+            ncloudxel TECHNOLOGIES Assistant
             <span onclick="toggleChatbot()">✖</span>
         </div>
 
@@ -298,13 +368,18 @@ function getBotReply(message) {
 <footer class="premium-footer">
   <div class="container footer-grid">
 
-    <div>
-      <h3>ncloudxel Technologies</h3>
-      <p>
-        Cloud, DevOps, and security engineering services helping businesses
-        scale reliably and securely.
-      </p>
-    </div>
+<div>
+  <a href="index.html">
+    <img src="assets/images/Footer.png" 
+         alt="ncloudxel Technologies" 
+         class="footer-logo">
+  </a>
+  <p>
+    Cloud, DevOps, and security engineering services helping businesses
+    scale reliably and securely.
+  </p>
+</div>
+
 
     <div>
       <h4>Services</h4>
@@ -320,14 +395,14 @@ function getBotReply(message) {
     <div>
       <h4>Contact</h4>
       <p>📧 info@ncloudxel.in</p>
-      <p>📍 LB-2,aastha plaza, Sector-5 Sahibabad,India(Serving Clients)</p>
+      <p>📍 LB-2, Plot 5/8 , Sector-5 Sahibabad,India(Serving Clients)</p>
       <p>📞 +91 93116 63343</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    © 2025 ncloudxel Technologies. All Rights Reserved.
+    © 2025 ncloudxel TECHNOLOGIES. All Rights Reserved.
     <a href="privacy.html">Privacy Policy</a>
   </div>
 </footer>
@@ -395,11 +470,30 @@ document.addEventListener('keydown', e => {
   ) e.preventDefault();
 });
 </script>
+<script>
+  const COOKIE_KEY = "ncloudxel_cookie_consent";
+
+  function showCookieBanner() {
+    if (!localStorage.getItem(COOKIE_KEY)) {
+      document.getElementById("cookie-banner").style.display = "block";
+    }
+  }
+
+  function acceptAllCookies() {
+    localStorage.setItem(COOKIE_KEY, "accepted");
+    document.getElementById("cookie-banner").style.display = "none";
+
+    // Enable analytics / GTM here if needed
+    // window.dataLayer = window.dataLayer || [];
+    // dataLayer.push({ event: "cookies_accepted" });
+  }
+
+  function openCookiePreferences() {
+    alert("Preferences modal can be added here (Phase-2)");
+  }
+
+  document.addEventListener("DOMContentLoaded", showCookieBanner);
+</script>
 
 </body>
 </html>
-
-
-
-
-
