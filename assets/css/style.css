@@ -1283,3 +1283,87 @@ body::before {
 .policy-container li {
   margin-bottom: 8px;
 }
+/* HEADER */
+.header {
+  background: #07142a;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* MENU LINKS */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* MOBILE FIX */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #081b35;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 35px;
+    text-align: center;
+    transition: 0.4s ease;
+    overflow-y: auto;   /* THIS FIXES SCROLL */
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+}
+/* Hide top bar on mobile */
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+
+  .contact-left {
+    padding-left: 20px;  /* smaller shift for mobile */
+    padding-right: 20px;
+  }
+
+}
